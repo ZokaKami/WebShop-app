@@ -4,14 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "devs": "vite",
+    "start": "vite",
+    "start-server": "node index.js && npm start",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-    
+    "preview": "vite preview",
+     
+    "clientinstall": "npm node --prefix client",
+    "dev": "concurrently \"node index.js\" \"npm run devs\"" 
   },
   "proxy": "http://localhost:3001/getStore",
   "dependencies": {
+    "concurrently": "^8.2.2",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "mongodb": "^6.5.0",
