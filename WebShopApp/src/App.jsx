@@ -4,13 +4,13 @@ import './App.css'
 import React from "react";
 import { useState } from "react";
 function App() {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("test");
 
   return (
     <>
       <SearchBar setSearch={setSearch} search={search}/>
-      <ItemRender/>
-      <h1>{search}</h1>
+      <ItemRender setSearch={setSearch} search={search}/>
+       
     </>
   )
 }
