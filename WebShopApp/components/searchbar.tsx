@@ -1,9 +1,8 @@
 import React from "react";
-import { useState } from "react";
 
-const searchbar = ({ search, setSearch }) => {
-  const handleInputChange = (event) => {
-    setSearch(event.target.value);
+const searchbar = ({ searchTerm, setSearchTerm }) => {
+  const handleChange = (e) => {
+    setSearchTerm(e.target.value.trim().toLowerCase());
   };
 
   return (
@@ -15,7 +14,8 @@ const searchbar = ({ search, setSearch }) => {
             type="text"
             placeholder="Search item.."
             name="name"
-            onChange={handleInputChange}
+            value={searchTerm}
+            onChange={handleChange}
           />
         </label>
       </form>

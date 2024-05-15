@@ -4,12 +4,12 @@ import './App.css'
 import React from "react";
 import { useState } from "react";
 function App() {
-  const [search, setSearch] = useState("test");
+  const [searchTerm, setSearchTerm] = useState('');
 
   return (
     <>
-      <SearchBar setSearch={setSearch} search={search}/>
-      <ItemRender setSearch={setSearch} search={search}/>
+      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <ItemRender   searchTerm={searchTerm}/>
        
     </>
   )
