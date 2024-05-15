@@ -1,5 +1,8 @@
 // products.js
-
+import City from "/components/images/city.jpg"
+import Shoes from "/components/images/shoes.jpg"
+import Spoon from "/components/images/spoon.jpg"
+import City from "/components/images/city.jpg"
 const Userz = [
   {
     "_id": {
@@ -18,7 +21,7 @@ const Userz = [
       "shoes",
       "footwear"
     ],
-    "image": "/components/images/shoes.jpg",
+    "image":Shoes,
     "quantity": 1
   },
   {
@@ -39,7 +42,7 @@ const Userz = [
       "spoon",
       "food"
     ],
-    "image": "/components/images/spoon.jpg",
+    "image": Spoon,
     "quantity": 1
   },
   {
@@ -58,7 +61,7 @@ const Userz = [
       "shoes",
       "footwear"
     ],
-    "image": "/components/images/city.jpg",
+    "image": City,
     "quantity": 1
   },
   {
@@ -78,7 +81,7 @@ const Userz = [
       "shoes",
       "footwear"
     ],
-    "image": "/components/images/shoes.jpg",
+    "image": Shoes,
     "quantity": 1
   }
 ];
