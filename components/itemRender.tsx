@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import userz from "./store.users.json";
+import userz from "./storeUsers.js";
 import Product from "./product.ts";
 import QuantityButton from "./quantityButton.tsx";
 export default function itemRender({ searchTerm }) {
