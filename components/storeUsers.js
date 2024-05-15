@@ -2,7 +2,7 @@
 import City from "/components/images/city.jpg"
 import Shoes from "/components/images/shoes.jpg"
 import Spoon from "/components/images/spoon.jpg"
-import City from "/components/images/city.jpg"
+
 const Userz = [
   {
     "_id": {
