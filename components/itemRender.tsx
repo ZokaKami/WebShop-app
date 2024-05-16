@@ -104,7 +104,7 @@ useEffect(() => {
   };
   return (
     <div className="flex flex-wrap justify-center xl:px-24 px-12 text-[16px]">
-      <div className="absolute right-12 top-6 border-2 w-1/10 max-w-[120px]  h-auto p-2  ">
+      <div className="absolute right-12 top-6 border-2   w-[120px]  h-auto p-2  ">
         {cart.map((itemz) => (
           <div>
             <h1>
